@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電卓 - iPhone風</title>
+    <meta name="description" content="iPhone純正の電卓の美しいデザインを再現しました。WindowsでもAndroidでもブラウザ上で簡単に使用できます。最大10桁までです。">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@xullua">
+    <meta name="twitter:title" content="電卓 - iPhone風">
+    <meta name="twitter:description" content="iPhone純正の電卓の美しいデザインを再現しました。WindowsでもAndroidでもブラウザ上で簡単に使用できます。最大10桁までです。">
+    <meta name="twitter:image" content="https://xullua.com/img/xullualogo1.png">
+
+    <link rel="shortcut icon" href="https://xullua.com/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="calculator.css">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="calculator.js"></script>
+    <!-- アナリティクス -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JDKGJ1E005"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JDKGJ1E005');
+    </script>
+</head>
+
+<body>
+    <div id="calculator">
+        <div class="result">
+            <input type="text" name="answer" id="answer" value="" placeholder="0" disabled="disabled" maxlength="9">
+        </div>
+
+
+        <div id="btn-top">
+            <input class="design0" id="clear" type="button" value="AC">
+            <input class="design0" id="plusminus" type="button" value="+/-">
+            <input class="design0" id="percent" type="button" value="%">
+            <input class="enzan" id="devision" type="button" value="÷">
+        </div>
+        <div class="btn-other">
+            <input class="design button" type="button" value="7">
+            <input class="design button" type="button" value="8">
+            <input class="design button" type="button" value="9">
+            <input class="enzan" id="multiplication" type="button" value="×">
+        </div>
+        <div class="btn-other">
+            <input class="design button" type="button" value="4">
+            <input class="design button" type="button" value="5">
+            <input class="design button" type="button" value="6">
+            <input class="enzan" id="substraction" type="button" value="-">
+        </div>
+        <div class="btn-other">
+            <input class="design button" type="button" value="1">
+            <input class="design button" type="button" value="2">
+            <input class="design button" type="button" value="3">
+            <input class="enzan" id="addition" type="button" value="+">
+        </div>
+        <div class="btn-other">
+            <input class="design button" id="zero" type="button" value="0">
+            <input class="design" id="dot" type="button" value=".">
+            <input class="design" id="equal" type="button" value="=">
+        </div>
+    </div><!-- calculator -->
+</body>

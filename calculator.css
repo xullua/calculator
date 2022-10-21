@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background: #000;
+    font-family: 'Noto Sans', sans-serif;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+#calculator {
+    width: 720px;
+    max-width: 90%;
+    height: calc(100vh - 20px);
+    margin: 0 auto;
+
+    text-align: center;
+    background: black;
+    font-size: 30px;
+    color: white;
+    cursor: default;
+}
+
+.result {
+    margin: 0 auto;
+    padding: 40px 0 10px 0;
+    width: calc((130px + 5px*2)*4);
+    transition: .5s;
+}
+
+#answer {
+    text-align: right;
+    margin: 0 auto;
+    background: black;
+    width: 100%;
+    height: 100px;
+    color: white;
+    font-size: 100px;
+    border: none;
+    transition: .5s;
+}
+
+#answer::placeholder {
+    color: white;
+}
+
+input:hover {
+    filter: brightness(125%);
+}
+
+.design0 {
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 5px auto;
+    padding: 10px;
+    background: #a5a5a5;
+    color: #000000;
+    border: none;
+    justify-content: space-between;
+    width: 130px;
+    aspect-ratio: 1 / 1;
+    font-size: 45px;
+    outline: 0;
+    transition-delay: 0s;
+    transition: 0.5s;
+}
+
+.design0:active {
+    background: #d9d9d9;
+    transition: 0s;
+}
+
+.design {
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 5px auto;
+    background: #343434;
+    border: none;
+    color: white;
+    justify-content: space-between;
+    width: 130px;
+    aspect-ratio: 1 / 1;
+    font-size: 45px;
+    outline: 0;
+    transition: .5s;
+}
+
+.design:active {
+    background: #737373;
+    transition: 0s;
+}
+
+.enzan,
+#equal {
+    cursor: pointer;
+    background: #f1a43c;
+    border: none;
+    border-radius: 50%;
+    margin: 5px auto;
+    color: white;
+    justify-content: space-between;
+    width: 130px;
+    aspect-ratio: 1 / 1;
+    font-size: 45px;
+    outline: 0;
+    transition: .5s;
+}
+
+.enzan:active {
+    background: #f3c995;
+    transition: 0s;
+}
+
+#equal:active {
+    background: #f3c995;
+    transition: 0s;
+}
+
+#zero {
+    cursor: pointer;
+    height: 130px;
+    width: 270px;
+    border-radius: 100px;
+    text-align: left;
+    padding-left: 52px;
+}
+
+@media screen and (max-width: 720px) {
+    #answer {
+        font-size: 90px;
+    }
+
+    .result {
+        width: calc((120px + 5px*2)*4);
+    }
+
+    .design0,
+    .design,
+    .enzan,
+    #equal {
+        width: 120px;
+        font-size: 40px;
+    }
+
+    #zero {
+        width: 250px;
+        height: 120px;
+        font-size: 40px;
+        padding-left: 48px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #answer {
+        font-size: 78px;
+    }
+
+    .result {
+        width: calc((100px + 5px*2)*4);
+    }
+
+    .design0,
+    .design,
+    .enzan,
+    #equal {
+        width: 100px;
+        font-size: 35px;
+    }
+
+    #zero {
+        width: 210px;
+        height: 100px;
+        font-size: 35px;
+        padding-left: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #answer {
+        font-size: 65px;
+    }
+
+    .result {
+        width: calc((80px + 5px*2)*4);
+    }
+
+    .design0,
+    .design,
+    .enzan,
+    #equal {
+        width: 80px;
+        font-size: 30px;
+    }
+
+    #zero {
+        width: 170px;
+        height: 80px;
+        font-size: 30px;
+        padding-left: 33px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #answer {
+        font-size: 50px;
+    }
+
+    .result {
+        width: calc((60px + 5px*2)*4);
+    }
+
+    .design0,
+    .design,
+    .enzan,
+    #equal {
+        width: 60px;
+        font-size: 25px;
+    }
+
+    #zero {
+        width: 130px;
+        height: 60px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #answer {
+        font-size: 40px;
+    }
+
+    .result {
+        width: calc((((100% - 10px*4)/4) + 5px*2)*4);
+    }
+
+    .design0,
+    .design,
+    .enzan,
+    #equal {
+        width: calc((100% - 10px*4)/4);
+        font-size: 20px;
+    }
+
+    #zero {
+        width: calc(100%/2 - 10px);
+        height: auto;
+        aspect-ratio: 9 / 4;
+        padding-left: 10%;
+        font-size: 20px;
+    }
+}
