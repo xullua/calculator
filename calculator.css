@@ -20,7 +20,6 @@ html::-webkit-scrollbar {
     max-width: 90%;
     height: calc(100vh - 20px);
     margin: 0 auto;
-
     text-align: center;
     background: black;
     font-size: 30px;
@@ -65,7 +64,7 @@ input:hover {
     border: none;
     justify-content: space-between;
     width: 130px;
-    aspect-ratio: 1 / 1;
+    height: 130px;
     font-size: 45px;
     outline: 0;
     transition-delay: 0s;
@@ -86,7 +85,7 @@ input:hover {
     color: white;
     justify-content: space-between;
     width: 130px;
-    aspect-ratio: 1 / 1;
+    height: 130px;
     font-size: 45px;
     outline: 0;
     transition: .5s;
@@ -107,7 +106,7 @@ input:hover {
     color: white;
     justify-content: space-between;
     width: 130px;
-    aspect-ratio: 1 / 1;
+    height: 130px;
     font-size: 45px;
     outline: 0;
     transition: .5s;
@@ -146,6 +145,7 @@ input:hover {
     .enzan,
     #equal {
         width: 120px;
+        height: 120px;
         font-size: 40px;
     }
 
@@ -171,6 +171,7 @@ input:hover {
     .enzan,
     #equal {
         width: 100px;
+        height: 100px;
         font-size: 35px;
     }
 
@@ -196,6 +197,7 @@ input:hover {
     .enzan,
     #equal {
         width: 80px;
+        height: 80px;
         font-size: 30px;
     }
 
@@ -221,6 +223,7 @@ input:hover {
     .enzan,
     #equal {
         width: 60px;
+        height: 60px;
         font-size: 25px;
     }
 
