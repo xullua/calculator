@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="calculator.css">
@@ -38,7 +38,7 @@
 </head>
 
 <body>
-    <div id="calculator">
+    <main id="calculator">
         <div class="result">
             <input type="text" name="answer" id="answer" value="" placeholder="0" disabled="disabled" maxlength="9">
         </div>
@@ -73,5 +73,35 @@
             <input class="design" id="dot" type="button" value=".">
             <input class="design" id="equal" type="button" value="=">
         </div>
-    </div><!-- calculator -->
+    </main>
+
+    <section class="about">
+        <input type="checkbox" name="onoff" id="onoff">
+        <label class="onoffbtn" for="onoff"></label>
+        <div class="aboutcontent">
+            <input type="checkbox" name="about" id="about">
+            <label class="openbtn" for="about">?</label>
+            <div class="content">
+                <div class="text">
+                    <h2>電卓</h2>
+                    <p>
+                        iPhoneのOSのiOSの標準電卓アプリのデザインを再現しました。<br>
+                        あらゆるデバイスで美しいデザインで使用できます。<br>
+                        Android端末で使って「iPhoneだぜ」と遊んでみたり。。。
+                    </p>
+                    <h3>注意点</h3>
+                    <p>
+                        基本的な計算はできますが、一般人が遊びとスキルアップを目的に作成したものですので確実な計算などはできません。<br>
+                        例えば0.1+0.2が0.3000000...となったりします。2進数と10進数の変換の際に起こるものです。治し方は知りません()<br>
+                        重要な計算では使用せず、簡単な計算と遊びで使ってください。
+                    </p>
+                    <h3>概要</h3>
+                    <p><a href="https://xullua.com">ぞるあ</a>が作成しました</p>
+                    <p><a href="https://xla.jp/dentaku">xla.jp/dentaku</a>で簡単にアクセスできます</p>
+                </div>
+                <label class="offbtn" for="onoff" style="font-size: 14px;">右下の「？」を消して閉じる</label>
+                <label class="closebtn" for="about" style="font-weight: bold;">閉じる</label>
+            </div>
+        </div>
+    </section>
 </body>

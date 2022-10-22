@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-appearance: none;
 }
 
 html,
@@ -50,9 +51,6 @@ html::-webkit-scrollbar {
     color: white;
 }
 
-input:hover {
-    filter: brightness(125%);
-}
 
 .design0 {
     cursor: pointer;
@@ -99,7 +97,7 @@ input:hover {
 .enzan,
 #equal {
     cursor: pointer;
-    background: #f1a43c;
+    background: #ff9100;
     border: none;
     border-radius: 100%;
     margin: 5px auto;
@@ -131,7 +129,7 @@ input:hover {
     padding-left: 52px;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 720px) , (max-height: 850px) {
     #answer {
         font-size: 90px;
     }
@@ -157,7 +155,7 @@ input:hover {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) , (max-height: 800px) {
     #answer {
         font-size: 78px;
     }
@@ -183,7 +181,7 @@ input:hover {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) , (max-height: 700px) {
     #answer {
         font-size: 65px;
     }
@@ -209,7 +207,7 @@ input:hover {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) , (max-height: 600px) {
     #answer {
         font-size: 50px;
     }
@@ -258,4 +256,111 @@ input:hover {
         padding-left: 10%;
         font-size: 20px;
     }
+}
+
+.about {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.about .openbtn {
+    display: block;
+    background: #7a7a7a7a;
+    color: #ff9100;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: .2s;
+}
+
+.about .openbtn:hover {
+    background: #85858585;
+}
+
+.about .openbtn:active {
+    background: #9c9c9c9c;
+}
+
+.about .aboutcontent,
+.about input[name="onoff"] {
+    display: block;
+}
+
+.about input:checked+.onoffbtn+.aboutcontent {
+    display: none;
+}
+
+.content,
+.about input[name="about"]{
+    display: none;
+}
+
+.about input:checked+.openbtn+.content {
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    position: fixed;
+    z-index: 9999;
+    top: 5vh;
+    left: 5vw;
+    width: calc(90vw - 40px);
+    height: calc(90vh - 60px);
+    background: #35353599;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    overflow-y: auto;
+    color-scheme: dark;
+}
+
+.about h2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #FFF;
+}
+
+.about .content p {
+    font-size: 13px;
+    font-weight: 300;
+    color: #c7c7c7;
+}
+
+.about h3 {
+    color: #FFf;
+    margin-top: 40px;
+}
+
+.about a {
+    color: #9faadd;
+    text-decoration: none;
+}
+
+.about a:hover {
+    color: #7384cf;
+}
+
+.about .closebtn,
+.about .offbtn {
+    color: #fff;
+    border: 1px solid #FFF;
+    padding: 10px 0;
+    margin-top: 5px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.about .closebtn:hover,
+.about .offbtn:hover {
+    background: #ffffff79;
 }
