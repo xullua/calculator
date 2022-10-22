@@ -364,3 +364,9 @@ html::-webkit-scrollbar {
 .about .offbtn:hover {
     background: #ffffff79;
 }
+
+@media screen and (max-width: 720px){
+    .about h3 {
+        margin-top: 15px;
+    }
+}
