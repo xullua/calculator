@@ -15,11 +15,6 @@
     <meta name="twitter:image" content="https://calculator.xullua.com/calculatorsamune.png">
 
     <link rel="shortcut icon" href="https://xullua.com/img/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="calculator.css">
 
@@ -38,41 +33,41 @@
 </head>
 
 <body>
-    <main id="calculator">
-        <div class="result">
-            <input type="text" name="answer" id="answer" value="" placeholder="0" disabled="disabled" maxlength="9">
-        </div>
-
-
-        <div id="btn-top">
-            <input class="design0" id="clear" type="button" value="AC">
-            <input class="design0" id="plusminus" type="button" value="+/-">
-            <input class="design0" id="percent" type="button" value="%">
-            <input class="enzan" id="devision" type="button" value="÷">
-        </div>
-        <div class="btn-other">
-            <input class="design button" type="button" value="7">
-            <input class="design button" type="button" value="8">
-            <input class="design button" type="button" value="9">
-            <input class="enzan" id="multiplication" type="button" value="×">
-        </div>
-        <div class="btn-other">
-            <input class="design button" type="button" value="4">
-            <input class="design button" type="button" value="5">
-            <input class="design button" type="button" value="6">
-            <input class="enzan" id="substraction" type="button" value="-">
-        </div>
-        <div class="btn-other">
-            <input class="design button" type="button" value="1">
-            <input class="design button" type="button" value="2">
-            <input class="design button" type="button" value="3">
-            <input class="enzan" id="addition" type="button" value="+">
-        </div>
-        <div class="btn-other">
-            <input class="design button" id="zero" type="button" value="0">
-            <input class="design" id="dot" type="button" value=".">
-            <input class="design" id="equal" type="button" value="=">
-        </div>
+    <main>
+        <section  id="calculator">
+            <div class="result">
+                <input type="text" name="answer" id="answer" value="" placeholder="0" disabled="disabled" maxlength="9">
+            </div>
+            <div id="btn-top">
+                <input class="design0" id="clear" type="button" value="AC">
+                <input class="design0" id="plusminus" type="button" value="+/-">
+                <input class="design0" id="percent" type="button" value="%">
+                <input class="enzan" id="devision" type="button" value="÷">
+            </div>
+            <div class="btn-other">
+                <input class="design button" type="button" value="7">
+                <input class="design button" type="button" value="8">
+                <input class="design button" type="button" value="9">
+                <input class="enzan" id="multiplication" type="button" value="×">
+            </div>
+            <div class="btn-other">
+                <input class="design button" type="button" value="4">
+                <input class="design button" type="button" value="5">
+                <input class="design button" type="button" value="6">
+                <input class="enzan" id="substraction" type="button" value="-">
+            </div>
+            <div class="btn-other">
+                <input class="design button" type="button" value="1">
+                <input class="design button" type="button" value="2">
+                <input class="design button" type="button" value="3">
+                <input class="enzan" id="addition" type="button" value="+">
+            </div>
+            <div class="btn-other">
+                <input class="design button" id="zero" type="button" value="0">
+                <input class="design" id="dot" type="button" value=".">
+                <input class="design" id="equal" type="button" value="=">
+            </div>
+        </section>
     </main>
 
     <section class="about">
@@ -96,11 +91,13 @@
                         重要な計算では使用せず、簡単な計算と遊びで使ってください。
                     </p>
                     <h3>概要</h3>
-                    <p><a href="https://xullua.com">ぞるあ</a>が作成しました</p>
-                    <p><a href="https://xla.jp/dentaku">xla.jp/dentaku</a>で簡単にアクセスできます</p>
+                    <p>作成者：<a href="https://xullua.com">ぞるあ</a> / 短縮URL：<a href="https://xla.jp/dentaku">xla.jp/dentaku</a></p>
+                    <p><a href="https://xullua.com/policy/privacy">プライバシーポリシー</a> / <a href="https://xullua.com/tools">その他のツール</a></p>
                 </div>
-                <label class="offbtn" for="onoff" style="font-size: 14px;">右下の「？」を消して閉じる</label>
-                <label class="closebtn" for="about" style="font-weight: bold;">閉じる</label>
+                <div class="btns">
+                    <label class="offbtn" for="onoff" style="font-size: 14px;">右下の「？」を消して閉じる</label>
+                    <label class="closebtn" for="about" style="font-weight: bold;">閉じる</label>
+                </div>
             </div>
         </div>
     </section>

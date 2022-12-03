@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'LSeedJP';
+    src: url(https://xullua.com/font/LSeedJPRg.woff) format('woff');
+    font-weight: 500, normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LSeedJP';
+    src: url(https://xullua.com/font/LSeedJPBd.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,20 +21,26 @@
 html,
 body {
     background: #000;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "LSeedJP", sans-serif;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    overflow: hidden;
 }
 
 html::-webkit-scrollbar {
     display: none;
 }
 
+main {
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
 #calculator {
     width: 720px;
     max-width: 90%;
-    height: calc(100vh - 20px);
-    margin: 0 auto;
+    margin: 50px auto 90px auto;
     text-align: center;
     background: black;
     font-size: 30px;
@@ -30,9 +50,10 @@ html::-webkit-scrollbar {
 
 .result {
     margin: 0 auto;
-    padding: 40px 0 10px 0;
+    padding: 0 0 10px 0;
     width: calc((130px + 5px*2)*4);
     transition: .5s;
+    color: #FFF;
 }
 
 #answer {
@@ -305,7 +326,7 @@ html::-webkit-scrollbar {
 
 .about input:checked+.openbtn+.content {
     display: grid;
-    grid-template-rows: 1fr auto auto;
+    grid-template-rows: 1fr auto;
     position: fixed;
     z-index: 9999;
     top: 5vh;
@@ -318,20 +339,23 @@ html::-webkit-scrollbar {
     border-radius: 10px;
     text-align: center;
     padding: 30px 20px;
-    font-family: 'Noto Sans JP', sans-serif;
     overflow-y: auto;
     color-scheme: dark;
 }
 
+.about .text {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
 .about h2 {
     font-size: 30px;
-    font-weight: 900;
+    font-weight: bold;
     color: #FFF;
 }
 
 .about .content p {
     font-size: 13px;
-    font-weight: 300;
     color: #c7c7c7;
 }
 
@@ -349,12 +373,19 @@ html::-webkit-scrollbar {
     color: #7384cf;
 }
 
+.about .btns {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .about .closebtn,
 .about .offbtn {
+    display: block;
     color: #fff;
     border: 1px solid #FFF;
     padding: 10px 0;
-    margin-top: 5px;
+    margin: 5px 0 0;
     border-radius: 40px;
     cursor: pointer;
     transition: .2s;
