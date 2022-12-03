@@ -53,7 +53,6 @@ main {
     padding: 0 0 10px 0;
     width: calc((130px + 5px*2)*4);
     transition: .5s;
-    color: #FFF;
 }
 
 #answer {
